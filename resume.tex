@@ -1,0 +1,150 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\\}
+
+% Create project heading. Parameters: Name, link, Tech stack
+\newcommand{\projectHeading}[3]{\Project{#1}{#2}
+\descript{#3}\\}
+
+\newcommand{\projectHeadingWithDate}[4]{\Project{#1}{#2}
+\descript{#3 | #4}\\}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Muhammad Hamza}
+% How you want it to show up on the resume
+% \newcommand{\yourWebsite}{website.com}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+% \newcommand{\yourWebsiteLink}{https://website.com}
+\newcommand{\yourEmail}{mhgb1000@gmail.com}
+\newcommand{\yourPhone}{+92-315-1171297}
+\newcommand{\githubUserName}{muhammadhamzagova666}
+\newcommand{\linkedInUserName}{muhammadhamzagova666}
+
+\begin{center}
+    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
+    \small \includegraphics[width=0.015\textwidth]{PNGs/mail.png} \href{mailto:\yourEmail}{\yourEmail} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/phone.png} \yourPhone \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/linkedin.png} \href{https://www.linkedin.com/in/\linkedInUserName}{\linkedInUserName} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/github.png} \href{https://github.com/\githubUserName}{\githubUserName}
+    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+\end{center}
+
+%--------------------------------------------------------------
+%     Professional Summary
+%--------------------------------------------------------------
+\section{Professional Summary}
+$\triangleright$ \textbf{Software Engineer \& AI Researcher} with a strong academic foundation and experience in AI/ML and software development.\\
+$\triangleright$ Proficient in \textbf{Python, C++, AI/ML, DevOps, and Cloud Computing}, with a focus on building scalable and efficient solutions.\\
+$\triangleright$ Developed multiple \textbf{AI-driven projects}, including deep learning, computer vision, and cloud-based applications.\\
+$\triangleright$ Recognized for \textbf{academic excellence}, consistently earning a place on the \textbf{Dean’s List} throughout the degree program.\\
+$\triangleright$ \textbf{Fast learner, problem-solver, and analytical thinker}, passionate about solving complex challenges in the AI industry.\\
+$\triangleright$ Dedicated to \textbf{continuous learning} and staying updated with cutting-edge technologies to drive impactful AI solutions.\\
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Put school first and degree second if your school is reputable
+\educationHeading{Bachelor of Computer Science}{National University of Computer and Emerging Sciences \hfill [CGPA: 3.71/4.00]}{Karachi, PK}{Aug 2021 - Present}
+
+$\triangleright$ \textbf{Achievements:}\\
+\quad - \textbf{Dean's List of Honours: }Fall 2021 \textbullet{} Spring 2022 \textbullet{} Fall 2022 \textbullet{} Spring 2023 \textbullet{} Fall 2023 \textbullet{} Spring 2024 \textbullet{} Fall 2024
+
+$\triangleright$ \textbf{Coursework:} Deep Learning for Perception \textbullet{} Data Science \textbullet{} Information Retrieval \textbullet{} DevOps \textbullet{} Enterprise Systems Development \textbullet{} Blockchain \& Cryptocurrency \textbullet{} International Business \textbullet{} Micro Economics \textbullet{} Accounting \& Finance
+
+$\triangleright$ \teacherAssistant{Programming Fundamentals \textbullet{} Differential Equations}
+\begin{multicols}{2} % Start two-column section
+    \educationHeading{GCE A-Level}{Highbrow College \hfill [Grades: 4 A*s \& As]}{Karachi, PK}{Aug 2019 - Jun 2021}
+    % \columnbreak % Force break between columns
+    \sectionsep
+    \newline
+    \educationHeading{GCE O-Level}{Habib Public School \hfill [Grades: 9 A*s \& As]}{Karachi, PK}{Aug 2015 - Jun 2019}
+\end{multicols} % End two-column section
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+% \section{Work Experience}
+% \resumeHeading{Bachelor of Computer Science}{National University of Computer and Emerging Sciences}{Karachi, PK}{Aug 2021 - Present}
+% $\triangleright$ Developed a palmprint verification system leveraging the \textbf{Comprehensive Competition Network (CCNet)}.\\
+% $\triangleright$ Implemented \textbf{CCNet} for feature extraction, enhancing accuracy in palmprint recognition.\\
+% $\triangleright$ Developed a \textbf{deep learning model} for secure, contactless identity verification.\\
+% $\triangleright$ Trained and tested on a \textbf{locally collected dataset} to enhance accuracy.\\
+% $\triangleright$ Improved \textbf{security, efficiency, and fraud prevention} in transport systems.\\
+% \sectionsep
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+\projectHeading{PalmSecure}{}{Python, PyTorch, OpenCV, Scikit-learn, CUDA, Git}
+$\triangleright$ Developed a palmprint verification system leveraging the \textbf{Comprehensive Competition Network (CCNet)}.\\
+$\triangleright$ Implemented \textbf{CCNet} for feature extraction, enhancing accuracy in palmprint recognition.\\
+$\triangleright$ Developed a \textbf{deep learning model} for secure, contactless identity verification.\\
+$\triangleright$ Trained and tested on a \textbf{locally collected dataset} to enhance accuracy.\\
+$\triangleright$ Improved \textbf{security, efficiency, and fraud prevention} in transport systems.\\
+\sectionsep
+
+\projectHeading{Product Title Classification}{}{Python, Flask, Scikit-learn, NLTK, Pandas, HTML, CSS, Git}
+$\triangleright$ Developed a web application for real-time classification of product titles into predefined categories.\\
+$\triangleright$ Integrated multiple machine learning models \textbf{(SVM, Decision Tree, Random Forest)} to optimize predictive accuracy.\\
+$\triangleright$ Leveraged \textbf{TF-IDF vectorization} and effective text preprocessing routines for feature extraction.\\
+$\triangleright$ Designed a user-friendly interface with \textbf{Flask} that supports product uploads and displays classification results.\\
+$\triangleright$ Employed \textbf{pickle} for model serialization to ensure efficient deployment and scalability.
+\sectionsep
+
+\projectHeading{AWS CI/CD Pipeline}{}{AWS, Python, Flask, Docker, HTML, CSS, JavaScript, Git}  
+$\triangleright$ Developed a \textbf{CI/CD pipeline} to automate build, test, and deployment processes, leveraging multiple AWS services.\\
+$\triangleright$ Utilized \textbf{AWS CodeBuild} for automating builds for both dynamic (\textbf{Flask}-based) and static web applications.\\
+$\triangleright$ Containerization using \textbf{Docker} and orchestrated deployments to \textbf{AWS ECS} with image management via \textbf{AWS ECR}.\\
+$\triangleright$ Deployed static website assets to \textbf{AWS S3} and managed source code with \textbf{Git} and \textbf{GitHub}.\\
+$\triangleright$ Configured a secure infrastructure within a dedicated \textbf{AWS VPC} to enhance network security and isolation.
+\sectionsep
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{skillList}
+    \singleItem{Proficiency:}{Python \textbullet{} C \textbullet{} C++ \textbullet{} SQL \textbullet{} Git \textbullet{} Linux \textbullet{} Latex}
+    \\
+    \singleItem{Familiarity:}{AWS \textbullet{} Docker \textbullet{} MongoDB \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS \textbullet{} Assembly \textbullet{} Bash}
+\end{skillList}
+
+%--------------------------------------------------------------
+%     Personal Info
+%--------------------------------------------------------------
+\begin{multicols}{2} % Start two-column section
+    \section{Experience}
+    \educationHeading{Freelance Tutor}{GCE A-Level \& O-Level}{Karachi, PK}{2019 - 2023}
+    $\triangleright$ \textbf{Subjects:} {Computer Science \textbullet{} Mathematics \textbullet{} Physics}
+
+    \columnbreak % Force break between columns
+
+    \section{Personal Info}
+    \begin{skillList}
+        \singleItem{Address:}{Karachi, Pakistan}
+        \\
+        \singleItem{Languages:}{English \textbullet{} Urdu}
+    \end{skillList}
+\end{multicols} % End two-column section
+\end{document}
