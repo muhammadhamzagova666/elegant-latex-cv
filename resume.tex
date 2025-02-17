@@ -25,6 +25,9 @@
 
 % Parameters: courses
 \newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+
+% Create freelance heading.
+\newcommand{\freelanceHeading}[3]{\runsubsection{#1}\hspace*{\fill}  \location{#2 | #3}\\}
  
 %--------------------------------------------------------------
 \begin{document}
@@ -33,6 +36,7 @@
 %     Profile
 %--------------------------------------------------------------
 \newcommand{\yourName}{Muhammad Hamza}
+\newcommand{\yourAddress}{Karachi, PK}
 % How you want it to show up on the resume
 % \newcommand{\yourWebsite}{website.com}
 % vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
@@ -44,7 +48,7 @@
 
 \begin{center}
     \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
-    \small \includegraphics[width=0.015\textwidth]{PNGs/mail.png} \href{mailto:\yourEmail}{\yourEmail} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/phone.png} \yourPhone \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/linkedin.png} \href{https://www.linkedin.com/in/\linkedInUserName}{\linkedInUserName} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/github.png} \href{https://github.com/\githubUserName}{\githubUserName}
+    \small \includegraphics[width=0.015\textwidth]{PNGs/mail.png} \href{mailto:\yourEmail}{\yourEmail} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/phone.png} \yourPhone \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/linkedin.png} \href{https://www.linkedin.com/in/\linkedInUserName}{\linkedInUserName} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/github.png} \href{https://github.com/\githubUserName}{\githubUserName} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/address.png} \yourAddress
     % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
 \end{center}
 
@@ -64,7 +68,7 @@ $\triangleright$ Dedicated to \textbf{continuous learning} and staying updated w
 %--------------------------------------------------------------
 \section{Education}
 % Put school first and degree second if your school is reputable
-\educationHeading{Bachelor of Computer Science}{National University of Computer and Emerging Sciences \hfill [CGPA: 3.71/4.00]}{Karachi, PK}{Aug 2021 - Present}
+\educationHeading{Bachelor of Computer Science}{National University of Computer and Emerging Sciences \hfill [CGPA: 3.71/4.00]}{\yourAddress}{Aug 2021 - Present}
 
 $\triangleright$ \textbf{Achievements:}\\
 \quad - \textbf{Dean's List of Honours: }Fall 2021 \textbullet{} Spring 2022 \textbullet{} Fall 2022 \textbullet{} Spring 2023 \textbullet{} Fall 2023 \textbullet{} Spring 2024 \textbullet{} Fall 2024
@@ -73,18 +77,17 @@ $\triangleright$ \textbf{Coursework:} Deep Learning for Perception \textbullet{}
 
 $\triangleright$ \teacherAssistant{Programming Fundamentals \textbullet{} Differential Equations}
 \begin{multicols}{2} % Start two-column section
-    \educationHeading{GCE A-Level}{Highbrow College \hfill [Grades: 4 A*s \& As]}{Karachi, PK}{Aug 2019 - Jun 2021}
+    \educationHeading{GCE A-Level}{Highbrow College \hfill [Grades: 4 A*s \& As]}{\yourAddress}{Aug 2019 - Jun 2021}
     % \columnbreak % Force break between columns
     \sectionsep
-    \newline
-    \educationHeading{GCE O-Level}{Habib Public School \hfill [Grades: 9 A*s \& As]}{Karachi, PK}{Aug 2015 - Jun 2019}
+    \educationHeading{GCE O-Level}{Habib Public School \hfill [Grades: 9 A*s \& As]}{\yourAddress}{Aug 2015 - Jun 2019}
 \end{multicols} % End two-column section
 
 %--------------------------------------------------------------
 %     Experience
 %--------------------------------------------------------------
 % \section{Work Experience}
-% \resumeHeading{Bachelor of Computer Science}{National University of Computer and Emerging Sciences}{Karachi, PK}{Aug 2021 - Present}
+% \resumeHeading{Bachelor of Computer Science}{National University of Computer and Emerging Sciences}{\yourAddress}{Aug 2021 - Present}
 % $\triangleright$ Developed a palmprint verification system leveraging the \textbf{Comprehensive Competition Network (CCNet)}.\\
 % $\triangleright$ Implemented \textbf{CCNet} for feature extraction, enhancing accuracy in palmprint recognition.\\
 % $\triangleright$ Developed a \textbf{deep learning model} for secure, contactless identity verification.\\
@@ -123,23 +126,18 @@ $\triangleright$ Configured a secure infrastructure within a dedicated \textbf{A
 %--------------------------------------------------------------
 %     Skills
 %--------------------------------------------------------------
-\section{Skills}
-\begin{skillList}
-    \singleItem{Proficiency:}{Python \textbullet{} C \textbullet{} C++ \textbullet{} SQL \textbullet{} Git \textbullet{} Linux \textbullet{} Latex}
-    \\
-    \singleItem{Familiarity:}{AWS \textbullet{} Docker \textbullet{} MongoDB \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS \textbullet{} Assembly \textbullet{} Bash}
-\end{skillList}
-
-%--------------------------------------------------------------
-%     Personal Info
-%--------------------------------------------------------------
 \begin{multicols}{2} % Start two-column section
-    \section{Experience}
-    \educationHeading{Freelance Tutor}{GCE A-Level \& O-Level}{Karachi, PK}{2019 - 2023}
-    $\triangleright$ \textbf{Subjects:} {Computer Science \textbullet{} Mathematics \textbullet{} Physics}
+    \section{Skills}
+    \begin{skillList}
+        \singleItem{Proficiency:}{Python \textbullet{} C \textbullet{} C++ \textbullet{} SQL \textbullet{} Git \textbullet{} Linux \textbullet{} Latex \textbullet{}} \\ {Canva \textbullet{} Markdown}
+        \\
+        \singleItem{Familiarity:}{AWS \textbullet{} Docker \textbullet{} MongoDB \textbullet{} JavaScript \textbullet{} HTML \textbullet{}} \\ {CSS \textbullet{} Assembly \textbullet{} Github Actions \textbullet{} Bash \textbullet{} Shell Scripting \textbullet{}} \\ {Yaml \textbullet{} Figma}
+    \end{skillList}
 
     \columnbreak % Force break between columns
-
+%--------------------------------------------------------------
+%     Certifications
+%--------------------------------------------------------------
     \section{Certifications}
     \begin{skillList}
         \singleItem{$\triangleright$ Developing LLM Applications with LangChain}{[DataCamp]}
@@ -149,6 +147,12 @@ $\triangleright$ Configured a secure infrastructure within a dedicated \textbf{A
         \singleItem{$\triangleright$ Generative AI Concepts:}{[DataCamp]}
         \\
         \singleItem{$\triangleright$ Google AI Essentials:}{[Google]}
+        \\
+        \singleItem{$\triangleright$ Cleaning Data in Python:}{[DataCamp]}
     \end{skillList}
 \end{multicols} % End two-column section
+
+\section{Freelance Tutor}
+\freelanceHeading{GCE A-Level \& O-Level}{\yourAddress}{2019 - 2023}
+$\triangleright$ \textbf{Subjects:} Computer Science, Mathematics, \& Physics 
 \end{document}
