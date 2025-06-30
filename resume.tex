@@ -4,10 +4,10 @@
 \resetHeaderAndFooter
 
 %--------------------------------------------------------------
-% Convenience command - make it easy to fill template
+% Convenience command - make it easy to fill the template
 
-% Create job position command. Parameters: company, position, location, when
-\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+% Create job position command. Parameters: company, position, location, and when
+\newcommand{\resumeHeading}[4]{\runsubsection{#1}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
 
 % Create education heading. Parameters: Name, degree, location, when
 \newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
@@ -24,7 +24,7 @@
 \newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
 
 % Parameters: courses
-\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant:} #1}
 
 % Create freelance heading.
 \newcommand{\freelanceHeading}[3]{\runsubsection{#1}\hspace*{\fill}  \location{#2 | #3}\\}
@@ -39,92 +39,147 @@
 \newcommand{\yourAddress}{Karachi, PK}
 % How you want it to show up on the resume
 % \newcommand{\yourWebsite}{website.com}
-% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+% vs how you want it to show up. If it's the same, you can just replace "\yourWebsiteLink" with "yourWebsite"
 % \newcommand{\yourWebsiteLink}{https://website.com}
-\newcommand{\yourEmail}{mhgb1000@gmail.com}
-\newcommand{\yourPhone}{+92-315-1171297}
+\newcommand{\yourEmail}{yourEmail}
+\newcommand{\yourPhone}{yourPhone}
 \newcommand{\githubUserName}{muhammadhamzagova666}
 \newcommand{\linkedInUserName}{muhammadhamzagova666}
 
 \begin{center}
-    \Huge \scshape \latoRegular{\yourName} \\ 
-    \Large \scshape \latoRegular{Software Engineer | Data Scientist | AI Researcher} \\ \vspace{1pt}
+    \Huge \scshape \latoRegular{\yourName} \\
+    \smallskip   % a small vertical skip
+
+    \large \scshape \latoRegular{IT Consultant | AI Researcher | Technical Writer}
+    
+    % \bigskip     % a large vertical skip
+    \medskip     % a medium vertical skip
     \small \includegraphics[width=0.015\textwidth]{PNGs/mail.png} \href{mailto:\yourEmail}{\yourEmail} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/phone.png} \yourPhone \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/linkedin.png} \href{https://www.linkedin.com/in/\linkedInUserName}{\linkedInUserName} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/github.png} \href{https://github.com/\githubUserName}{\githubUserName} \textbullet{} \includegraphics[width=0.015\textwidth]{PNGs/address.png} \yourAddress
     % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
 \end{center}
 
-%--------------------------------------------------------------
-%     Professional Summary
-%--------------------------------------------------------------
-\section{Professional Summary}
-$\triangleright$ \textbf{Software Engineer \& AI Researcher} with a strong academic foundation \& expertise in \textbf{AI/ML, DevOps, \& Cloud Computing}.\\
-$\triangleright$ Developed multiple \textbf{AI-driven projects}, including \textbf{Deep Learning, Computer Vision, \& Web-based Applications}.\\
-$\triangleright$ Recognized for \textbf{Academic Excellence} \& a strong problem-solving mindset in AI innovation.\\
-
+\noindent\hrulefill
 %--------------------------------------------------------------
 %     Education
 %--------------------------------------------------------------
 \section{Education}
 % Put school first \& degree second if your school is reputable
-\educationHeading{Bachelor of Computer Science}{National University of Computer \& Emerging Sciences \hfill [CGPA: 3.71/4.00]}{\yourAddress}{Aug 2021 - Present}
+\educationHeading{Bachelor of Computer Science}{National University of Computer \& Emerging Sciences (FAST-NUCES) \hfill [CGPA: 3.7/4.0]}{\yourAddress}{Aug 2021 - Jun 2025}
 
-$\triangleright$ \textbf{Dean's List of Honours: }Fall 2021 \textbullet{} Spring 2022 \textbullet{} Fall 2022 \textbullet{} Spring 2023 \textbullet{} Fall 2023 \textbullet{} Spring 2024 \textbullet{} Fall 2024\\
+$\triangleright$ \textbf{Dean's List of Honours: }Fall 21 \textbullet{} Spring 22 \textbullet{} Fall 22 \textbullet{} Spring 23 \textbullet{} Fall 23 \textbullet{} Spring 24 \textbullet{} Fall 24 \textbullet{} Spring 25\\
 
-$\triangleright$ \textbf{Coursework:} Deep Learning for Perception \textbullet{} Data Science \textbullet{} Information Retrieval \textbullet{} DevOps \textbullet{} Enterprise Systems Development \textbullet{} Blockchain \& Cryptocurrency \textbullet{} International Business \textbullet{} Micro Economics \textbullet{} Accounting \& Finance\\
+$\triangleright$ \textbf{Coursework:} Deep Learning for Perception \textbullet{} Data Science \textbullet{} Information Retrieval \textbullet{} Blockchain \& Cryptocurrency \textbullet{} DevOps \textbullet{} Enterprise Systems Development \textbullet{} International Business \textbullet{} Micro Economics \textbullet{} Accounting \& Finance\\
 
-$\triangleright$ \textbf{Research:} Comprehensive Competition Mechanism \textbullet{} Security Architectures for Generative-AI Systems \textbullet{} MST Algorithms Optimization \& Parallelization \textbullet{} Geometric Algorithms\\
+$\triangleright$ \textbf{Research:} Comprehensive Competition Mechanism for Palmprint Verification\\
 
-$\triangleright$ \teacherAssistant{Programming Fundamentals \textbullet{} Differential Equations}
+$\triangleright$ \teacherAssistant{Data Science \textbullet{} Programming Fundamentals \textbullet{} Differential Equations}
 
-\begin{multicols}{2} % Start two-column section
-    \educationHeading{GCE A-Level}{Highbrow College \hfill [Grades: 1 A* \& 3 As]}{\yourAddress}{Aug 2019 - Jun 2021}
-    $\triangleright$ \textbf{Exemplary Academia Award: }Class of 2021\\
-    \columnbreak % Force break between columns
-    % \sectionsep
-    \educationHeading{GCE O-Level}{Habib Public School \hfill [Grades: 3 A*s \& 6 As]}{\yourAddress}{Aug 2015 - Jun 2019}
-    $\triangleright$ \textbf{High Achiever Award: }Class of 2019
-\end{multicols} % End two-column section
+$\triangleright$ \textbf{Activities:} Google Developer Student Club \textbullet{} FAST Data Science Society
 
+% \begin{multicols}{2} % Start two-column section
+%     \educationHeading{GCE A-Level}{Highbrow College \hfill [Grades: 1 A* \& 3 As]}{\yourAddress}{Aug 2019 - Jun 2021}
+%     $\triangleright$ \textbf{Exemplary Academia Award: }Class of 2021\\
+%     $\triangleright$ \textbf{Activities:} German Language \textbullet{} E-Learning Society
+%     \columnbreak % Force a break between columns
+
+%     \educationHeading{GCE O-Level}{Habib Public School \hfill [Grades: 3 A*s \& 6 As]}{\yourAddress}{Aug 2015 - Jun 2019}
+%     $\triangleright$ \textbf{High Achiever Award: }Class of 2019\\
+%     $\triangleright$ \textbf{Activities:} English Literary Club \textbullet{} Music Club
+% \end{multicols} % End two-column section
+
+\noindent\hrulefill
 %--------------------------------------------------------------
 %     Experience
 %--------------------------------------------------------------
-% \section{Work Experience}
-% \resumeHeading{Bachelor of Computer Science}{National University of Computer \& Emerging Sciences}{\yourAddress}{Aug 2021 - Present}
-% $\triangleright$ Developed a palmprint verification system leveraging the \textbf{Comprehensive Competition Network (CCNet)}.\\
-% $\triangleright$ Implemented \textbf{CCNet} for feature extraction, enhancing accuracy in palmprint recognition.\\
-% $\triangleright$ Developed a \textbf{deep learning model} for secure, contactless identity verification.\\
-% $\triangleright$ Trained \& tested on a \textbf{locally collected dataset} to enhance accuracy.\\
-% $\triangleright$ Improved \textbf{security, efficiency, \& fraud prevention} in transport systems.\\
-% \sectionsep
+\section{Work Experience}
+\resumeHeading{AI Engineer – Trainee}{Intelik Immutable Intelligence}{Karachi, Pakistan (On‑site) | Contract}{Jun 2025}
 
+$\triangleright$ Implemented \textbf{RAG} pipeline with \textbf{PPChatOCR} for automated extraction from documents, achieving \textbf{\~{}90\% accuracy}.\\
+
+$\triangleright$ Integrated local \textbf{Ollama/vLLM} inference alongside embedding-based retrieval for context-aware document QA.\\
+
+$\triangleright$ Containerised and deployed \textbf{FastAPI} microservices to orchestrate OCR, vector building, and chat endpoints.\\
+
+\noindent\hrulefill
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\textbf{Languages:}{ Python \textbullet{} C/C++ \textbullet{} HTML \textbullet{} CSS  \textbullet{} JavaScript \textbullet{} Assembly Script \textbullet{} Bash Script} \textbf{|} \textbf{Frameworks:}{ Django \textbullet{} FastAPI \textbullet{} Flask} \textbf{|} \textbf{Databases:}{ MongoDB \textbullet{} MySQL \textbullet{} PostgreSQL} \textbf{|} \textbf{Design:}{ Canva \textbullet{} Figma \textbullet{} Gimp} \textbf{|} \textbf{OS:}{ Linux \textbullet{} Windows} \textbf{|} \textbf{DevOps \& Cloud:}{ AWS \textbullet{} Docker \textbullet{} Git \textbullet{} GitHub Actions \textbullet{} Kubernetes} \textbf{|} \textbf{AI \& DS:}{ Keras \textbullet{} NLTK \textbullet{} NumPy \textbullet{} OpenCV \textbullet{} PaddlePaddle \textbullet{} Pandas \textbullet{} PyTorch \textbullet{} Scikit-Learn \textbullet{} TensorFlow \textbullet{} SAP Analytics Cloud} \textbf{|} \textbf{Blockchain:}{ Multichain \textbullet{} Solidity}
+
+\noindent\hrulefill
+%--------------------------------------------------------------
+%     Certifications
+%--------------------------------------------------------------
+\section{Certifications}
+\textbf{Developing LLM Applications with LangChain} [DataCamp] \textbullet{} \textbf{Generative AI Concepts} [DataCamp] \textbullet{} \textbf{Docker Training Course for the Absolute Beginner} [KodeKloud] \textbullet{} \textbf{Google AI Essentials} [Google] \textbullet{} \textbf{Cleaning Data in Python} [DataCamp]
+
+\noindent\hrulefill
 %--------------------------------------------------------------
 %     Projects
 %--------------------------------------------------------------
+% \section{Final Year Project}
 \section{Projects}
-\educationHeading{PalmSecure (Final Year Project)}{Python, PyTorch, React-Native, OpenCV, Scikit-learn, Fast-API, Firebase, CUDA, Docker, Latex, Git}{Model Implementation \& Mobile Application}{Aug 2024 - Present}
+\educationHeading{PalmSecure - Palmprint Verification System}{Python, PyTorch, React-Native, OpenCV, FastAPI, Supabase, CUDA, Docker, Latex, Git}{Model Implementation \& Application}{Aug 2024 - May 2025}
+
 $\triangleright$ Transportation systems face critical challenges in \textbf{identity verification}, \textbf{security breaches}, and \textbf{unauthorized access}.\\
+
 $\triangleright$ Developed a \textbf{palmprint verification system} using \textbf{Comprehensive Competition Network} for biometric security.\\
+
 $\triangleright$ Implemented \textbf{deep learning} model with \textbf{multi-order texture} and \textbf{spatial feature} extraction for robust recognition.\\
-$\triangleright$ Created \textbf{React Native} mobile application integrating \textbf{real-time verification} capabilities and \textbf{containerized deployment}.\\
+
+$\triangleright$ Created \textbf{React-Native} mobile application integrating \textbf{real-time verification} capabilities and \textbf{containerized deployment}.\\
+
 $\triangleright$ Delivered a non-contact solution achieving improved \textbf{security standards} across transport and banking sectors.
 \sectionsep
 
-\educationHeading{Product Title Classification}{Python, Flask, Scikit-learn, NLTK, Pandas, HTML, CSS, Git}{Web-based ML Application}{Aug 2024 - Dec 2024}
-$\triangleright$ E-commerce platforms required precise \textbf{product classification} to improve \textbf{search}, \textbf{management}, \& \textbf{user experience}.\\
-$\triangleright$ Developed a web application using \textbf{Flask} with \textbf{scikit-learn} \& \textbf{nltk} for data preprocessing \& model training.\\
-$\triangleright$ Delivered a streamlined solution that accurately classifies \textbf{product titles}, enhancing overall \textbf{product management}.\\
+\educationHeading{Cosmetics Supply-chain Management System}{Python, FastAPI, Multichain, Solidity, Scikit-learn, NLTK, PostgreSQL, React.js, Git}{Blockchain \& AI Web Application}{Jan 2025 – May 2025}
+
+$\triangleright$ Combined \textbf{Multichain} and \textbf{Solidity} smart contracts to record immutable provenance and automate compliance checks.\\
+
+$\triangleright$ Implemented \textbf{AI} pipelines for supervised anomaly detection and \textbf{NLP}-based ingredient consistency analysis.\\
+
+$\triangleright$ Developed a \textbf{React.js} frontend and \textbf{FastAPI} backend to query product history and receive real-time counterfeit alerts.
 \sectionsep
 
-\educationHeading{AWS CI/CD Pipeline - Todo List Application}{AWS, Python, Flask, Docker, HTML, CSS, JavaScript, Git}{Cloud-based Web Application}{Aug 2024 - Dec 2024}
-$\triangleright$ Automated integration \& delivery for dynamic web applications using \textbf{Flask} \& \textbf{AWS CodeBuild}.\\
-$\triangleright$ Utilized \textbf{Docker} with \textbf{AWS ECS} \& \textbf{ECR} for secure, scalable containerized deployments.\\
-$\triangleright$ Implemented static asset hosting on \textbf{AWS S3} while managing source code with \textbf{Git} \& \textbf{GitHub}.
-\sectionsep
+% \educationHeading{Face Recognition with Vision \& Swin Transformers}{Python, PyTorch, Hugging Face Transformers, LFW Dataset, Git}{Comparative Analysis}{Jan 2025 - May 2025}
+% $\triangleright$ Implemented training pipelines for \textbf{Vision} and \textbf{Swin} Transformers on the LFW dataset, for performance comparison.\\
+
+% $\triangleright$ Achieved \textbf{85.12\%} test accuracy with ViT and \textbf{96.66\%} with Swin, analysing \textbf{convergence} and \textbf{inference speed}.\\
+
+% $\triangleright$ Automated scripts for \textbf{ROC curves} and \textbf{confusion matrices}, and delivered a comprehensive comparative analysis.
+% \sectionsep
+
+% \educationHeading{Enterprise Systems Project}{SAP Analytics Cloud, Data Actions, Stories, Modeller, Public Dimensions}{SAC Stories \& Data Modelling}{Jan 2025 - May 2025}
+% $\triangleright$ Configured \textbf{public dimensions} (Product, Version, Date, GL Account) and built \textbf{Sales} \& \textbf{Cost} planning models.\\
+% $\triangleright$ Developed \textbf{Data Actions} to calculate Revenue, Cost of Goods, and transfer cost data between models.\\
+% $\triangleright$ Created \textbf{stories} aggregating \& computing GL Accounts to deliver an interactive \textbf{P\&L} dashboard.
+% \sectionsep
+
+\educationHeading{Product Title Classification}{Python, Flask, Scikit-learn, NLTK, Pandas, HTML, CSS, Git}{ML Web Application}{Aug 2024 - Dec 2024}
+$\triangleright$ E-commerce platforms required precise \textbf{product classification} to improve \textbf{search}, \textbf{management}, \& \textbf{user experience}.\\
+
+$\triangleright$ Developed a web application using \textbf{Flask} with \textbf{scikit-learn} \& \textbf{nltk} for data preprocessing \& model training.\\
+
+$\triangleright$ Delivered a streamlined solution that accurately classifies \textbf{product titles}, enhancing overall \textbf{product management}.
+% \sectionsep
+
+% \educationHeading{AWS CI/CD Pipeline - Todo List Application}{AWS, Python, Flask, Docker, HTML, CSS, JavaScript, Git}{Cloud-based Web Application}{Aug 2024 - Dec 2024}
+% $\triangleright$ Automated integration \& delivery for dynamic web applications using \textbf{Flask} \& \textbf{AWS CodeBuild}.\\
+% $\triangleright$ Utilized \textbf{Docker} with \textbf{AWS ECS} \& \textbf{ECR} for secure, scalable containerized deployments.\\
+% $\triangleright$ Implemented static asset hosting on \textbf{AWS S3} while managing source code with \textbf{Git} \& \textbf{GitHub}.
+% \sectionsep
+
+% \educationHeading{Information Retrieval System}{Python, NLTK, PyQt5, Tkinter, Scikit-learn, NumPy, Git}{IR Graphical Desktop Application}{Jan 2024 - May 2024}
+% $\triangleright$ Developed a comprehensive system providing \textbf{Boolean}, \textbf{Vector-Space}, \textbf{Classification}, and \textbf{Clustering} retrieval models.\\
+% $\triangleright$ Implemented techniques like \textbf{inverted indexing}, \textbf{TF-IDF vectorization}, \textbf{KNN classification}, and \textbf{K-means clustering}.\\
+% $\triangleright$ Created \textbf{GUI interfaces} across all components for intuitive search query processing with detailed evaluation metrics.
+% \sectionsep
 
 % \educationHeading{Chess Game}{Python, Pygame, Socket Programming, Stockfish, Git}{Graphical Desktop Application}{Jan 2024 - May 2024}
 % $\triangleright$ Chess enthusiasts required a versatile \textbf{chess game} to support \textbf{local multiplayer}, \textbf{online play}, \& an \textbf{AI opponent}.\\
 % $\triangleright$ Developed a modular solution using \textbf{Pygame} for the GUI, \textbf{Sockets} for online connectivity, \& \textbf{Stockfish} for AI.\\
-% $\triangleright$ Delivered a robust application that enhances the overall \textbf{gaming experience} with a streamlined interface.\\
+% $\triangleright$ Delivered a robust application that enhances the overall \textbf{gaming experience} with a streamlined interface.
 % \sectionsep
 
 % \educationHeading{AI-Powered Pong Game}{Python, Pygame, NEAT-Python, Latex, Git}{Game Development \& AI Implementation}{Jan 2024 - May 2024}
@@ -133,42 +188,91 @@ $\triangleright$ Implemented static asset hosting on \textbf{AWS S3} while manag
 % $\triangleright$ Delivered a system achieving \textbf{continuous strategy evolution} through \textbf{competitive learning} \& \textbf{fitness tracking}.
 % \sectionsep
 
-% \educationHeading{Doctor Appointment System}{MERN Stack, Redux, JWT, Bootstrap, Ant Design, Latex, Git}{Full Stack Web Application}{Jan 2024 - May 2024}
+% \educationHeading{Doctor Appointment System}{MERN Stack, Bootstrap, Latex, Git}{Full Stack Web Application}{Jan 2024 - May 2024}
 % $\triangleright$ Healthcare facilities faced challenges in managing \textbf{patient appointments}, \textbf{doctor schedules}, \& \textbf{workflows}.\\
 % $\triangleright$ Developed a \textbf{full-stack solution} using \textbf{MERN stack} \& \textbf{Redux Toolkit} for comprehensive appointment management.\\
 % $\triangleright$ Delivered a secure platform with \textbf{JWT authentication} with streamlined \textbf{role-based access} \& \textbf{real-time scheduling}.
 % \sectionsep
 
-% \educationHeading{Employee Attendance  Management System}{React, Node.js, MySQL, Express, Latex, Git}{Full Stack Web Application}{Aug 2023 - Dec 2023}
+% \educationHeading{Employee Attendance  Management System}{React.js, Node.js, MySQL, Express, Latex, Git}{Full Stack Web Application}{Aug 2023 - Dec 2023}
 % $\triangleright$ Organizations struggle with \textbf{manual attendance tracking}, \textbf{data inconsistency}, \& \textbf{inefficient reporting}.\\
 % $\triangleright$ Developed a \textbf{three-tier architecture} solution using \textbf{MySQL-ERN stack} with \textbf{role-based access control}.\\
 % $\triangleright$ Delivered a scalable platform enabling \textbf{real-time tracking} \& \textbf{automated reporting} with enhanced \textbf{data integrity}.
 % \sectionsep
 
-%--------------------------------------------------------------
-%     Skills
-%--------------------------------------------------------------
-\section{Skills}
-\begin{skillList}
-    \singleItem{Proficiency:} Python \textbullet{} C \textbullet{} C++ \textbullet{} SQL \textbullet{} Git \textbullet{} Linux \textbullet{} Latex \textbullet{} Canva \textbullet{} Markdown
-    \\
-    \singleItem{Familiarity:} AWS \textbullet{} Docker \textbullet{} MongoDB \textbullet{} JavaScript \textbullet{} HTML \textbullet{} CSS \textbullet{} Assembly \textbullet{} Github Actions \textbullet{} Bash \textbullet{} Figma
-\end{skillList}
+% \educationHeading{Linux Spinlock System Call}{C, Linux Kernel, GCC, Spinlock API}{Kernel Module/System Call Extension}{Jan 2023 - May 2023}
+% $\triangleright$ Developed a \textbf{system call} that demonstrates \textbf{spinlock} mechanisms for effective synchronization in the Linux kernel.\\
+% $\triangleright$ Implemented in \textbf{C} within the Linux kernel environment, leveraging native \textbf{spinlock} APIs and built with \textbf{GCC}.\\
+% $\triangleright$ Provides a practical tool for OS developers to study \textbf{low-level synchronization} and \textbf{kernel modification}.
+% \sectionsep
 
-%--------------------------------------------------------------
-%     Certifications
-%--------------------------------------------------------------
-\section{Certifications}
-\textbf{Developing LLM Applications with LangChain} [DataCamp] \textbullet{} \textbf{Generative AI Concepts} [DataCamp] \textbullet{} \textbf{Docker Training Course for the Absolute Beginner} [KodeKloud] \textbullet{} \textbf{Google AI Essentials} [Google] \textbullet{} \textbf{Cleaning Data in Python} [DataCamp]
+% \educationHeading{Fibre Optic Trajectory Optimization System}{C++, g++, Visual Studio Code, Standard C++ Libraries}{Command-Line Application}{Aug 2022 - Dec 2022}
+% $\triangleright$ Addressed the challenge of optimising routing paths for fibre-optic cables to minimise signal loss and installation costs.\\
+% $\triangleright$ Implemented a \textbf{C++} console application that leverages core \textbf{optimization algorithms} for effective trajectory analysis.\\
+% $\triangleright$ Provided a robust and efficient tool to design cost-effective fibre-optic networks.
+% \sectionsep
 
-%--------------------------------------------------------------
-%     Extra
-%--------------------------------------------------------------
-\section{Languages}
-\textbf{English:} Bilingual Proficiency \textbullet{} \textbf{Urdu:} Native Proficiency
+% \educationHeading{Financial Records Management System}{C++, Visual Studio Code, g++, conio.h, windows.h, iostream, fstream, iomanip}{Command-Line Application}{Aug 2022 - Dec 2022}
+% $\triangleright$ Developed a simplified process of maintaining accounting records by efficiently tracking transactions.\\
+% $\triangleright$ Implemented as a \textbf{C++} console application for \textbf{Windows} using standard libraries and platform-specific headers.\\
+% $\triangleright$ Streamlined financial record management, enabling developers to generate accurate financial reports.
+% \sectionsep
 
-% \section{Freelance Tutor}
-% \freelanceHeading{GCE A-Level \& O-Level}{\yourAddress}{2019 - 2023}
-% $\triangleright$ \textbf{Subjects:} Computer Science, Mathematics, \& Physics
+% \educationHeading{Word Guesser}{MASM, x86 Assembly, Irvine32.inc library, CLI}{Command-Line Game}{Aug 2022 - Dec 2022}
+% $\triangleright$ Developed to create an interactive word guesser that demonstrates \textbf{low-level programming} concepts.\\
+% $\triangleright$ Implemented using \textbf{x86 Assembly} with the \textbf{Irvine32.inc library} to handle I/O and other essential operations.\\
+% $\triangleright$ Delivers a \textbf{performance-focused} solution that highlights the intricacies of assembly language programming.
+% \sectionsep
+
+% \educationHeading{Employee Management System}{C++, Visual Studio/G++, conio.h, windows.h}{Command-Line Application}{Jan 2022 - May 2022}
+% $\triangleright$ Developed to tackle the challenge of managing \textbf{employee records} and \textbf{payroll} efficiently.\\
+% $\triangleright$ Implemented as a \textbf{C++} console application utilizing standard libraries for \textbf{secure login} and \textbf{file-based persistence}.\\
+% $\triangleright$ Delivers a reliable solution that streamlines \textbf{HR} tasks and \textbf{payroll management}.
+% \sectionsep
+
+% \educationHeading{Tourism Management System}{C, GCC, CLI}{Command-Line Application}{Aug 2021 - Dec 2021}
+% $\triangleright$ Developed to address the challenge of managing \textbf{user accounts} and \textbf{tour bookings} in a \textbf{streamlined} manner.\\
+% $\triangleright$ Implemented in \textbf{C} using \textbf{GCC}, featuring a simple and intuitive \textbf{CLI} for \textbf{registration}, \textbf{login}, \textbf{booking}, and \textbf{cancellations}.\\
+% $\triangleright$ Provides an \textbf{efficient}, \textbf{lightweight} solution for \textbf{tourism management}, serving as a practical tool for \textbf{developers}.
+
+% \section{Research Projects}
+
+% \educationHeading{SAGAI Research Analysis}{LaTeX, SAGAI Conference, IEEE Convention, Git}{Research Analysis}{Aug 2024 - Dec 2024}
+% $\triangleright$ Addressed the emerging \textbf{security challenges} in \textbf{Generative AI systems} by analyzing \textbf{vulnerabilities} and \textbf{strategies}.\\
+% $\triangleright$ Summarized and compared four seminal research papers using \textbf{LaTeX documentation} and \textbf{IEEE standards}.\\
+% $\triangleright$ Delivered actionable insights that aid \textbf{security researchers} and \textbf{practitioners} in strengthening \textbf{AI system defenses}.
+% \sectionsep
+
+% \educationHeading{Parallel MST Algorithms}{C++, OpenMP, MPI, GCC}{Parallel MST Algorithms}{Aug 2023 - Dec 2023}
+% $\triangleright$ Tackled the computational challenges of processing large-scale graphs by computing the \textbf{MSTs} using parallel techniques.\\
+% $\triangleright$ Implemented in \textbf{C++} with parallel programming constructs (\textbf{OpenMP}, \textbf{MPI}) to execute multiple steps concurrently.\\
+% $\triangleright$ Delivers a scalable and high-performance solution that significantly reduces the processing time for computations.
+% \sectionsep
+
+% \educationHeading{Geometric Algorithms}{C++, GCC, STL}{Algorithm Library \& Graphical Desktop Application}{Aug 2023 - Dec 2023}
+% $\triangleright$ Addressed the challenges of computational geometry by providing efficient solutions to geometric problems.\\
+% $\triangleright$ Implemented in \textbf{C++} using optimized algorithms for \textbf{convex hull} construction, \textbf{line intersection}, and \textbf{point inclusion}.\\
+% $\triangleright$ Offers a robust toolkit for academic research and practical graphics and spatial analysis applications.
+% \sectionsep
+
+% \educationHeading{MST Algorithms Optimization}{C++, GCC, STL, Graph Algorithms}{Algorithm Optimization}{Aug 2023 - Dec 2023}
+% $\triangleright$ Addressed the challenge of optimising Minimum Spanning Tree computations for large and complex graph datasets.\\
+% $\triangleright$ Implemented efficient data structures along with tailored algorithmic enhancements for improved performance.\\
+% $\triangleright$ Provides a solution that significantly reduces computation time in graph-intensive applications.
+
+% \noindent\hrulefill
+% %--------------------------------------------------------------
+% %     Extra
+% %--------------------------------------------------------------
+% \begin{multicols}{2} % Start two-column section
+%     \section{Freelance Tutor}
+%     \freelanceHeading{GCE A-Level \& O-Level}{\yourAddress}{2019 - 2022}
+%     $\triangleright$ \textbf{Subjects:} Computer Science, Mathematics, \& Physics
+%     \columnbreak % Force a break between columns
+
+%     \section{Languages}
+%     \textbf{English:} Professional Proficiency\\
+%     \textbf{Urdu:} Native Proficiency
+% \end{multicols} % End two-column section
 
 \end{document}
